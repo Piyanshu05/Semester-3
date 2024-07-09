@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vowel Occurence</title>
+</head>
+<body>
+    <script>
+        var sentence = prompt("Enter a sentence:");
+        var vowels = ['a', 'e', 'i', 'o', 'u'];
+        var vowelCount = 0;
+        
+        for (var i = 0; i < sentence.length; i++) 
+        {
+            var char = sentence.charAt(i).toLowerCase();
+            if (vowels.includes(char)) 
+            {
+                vowelCount++;
+            }
+        }
+        
+        document.write("Number of vowels in the sentence: " + vowelCount);
+
+    </script>
+</body>
+</html>
