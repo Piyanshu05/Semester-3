@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <script>
+        var num = parseInt(prompt("Enter number :"));
+        var factorial = 1;
+        
+        if (isNaN(num) || num < 0) 
+        {
+            alert("Invalid input!");
+        }
+        else if(num > 0)
+        {
+            for(var i = 1; i <= num; i++)
+            {
+                factorial *= i;
+            }
+            alert("Factorial of " + num + " is: " + factorial);
+        }
+    </script>
+</body>
+</html>

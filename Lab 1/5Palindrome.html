@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <script>
+    function palindrome() 
+    {  
+        var a, b, no, temp = 0;  
+        no = Number(document.getElementById ("palindrome").value);  
+        b = no;  
+        while (no > 0)  
+        {  
+            a = no % 10;  
+            no = parseInt( no / 10);  
+            temptemp = temp*10 + a;  
+        }  
+        if (temp == b)  
+        {  
+            alert( "It is a Palindrome Number");  
+        }  
+        else  
+        {  
+            alert ("it is not a Palindrome Number");  
+        }  
+    }  
+    </script>
+</body>
+</html>
